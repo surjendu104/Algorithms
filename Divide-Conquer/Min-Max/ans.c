@@ -1,3 +1,5 @@
+// TC:O(N)
+
 #include <stdio.h>
 #include <stdlib.h>
 
