@@ -1,5 +1,5 @@
 /*
-    Time complexity: O(n*logn)
+    Time complexity- O(n*logn)
     Space complexity: O(n)
     stable but not in palce algo
     More space efficient in Linked list than Array
