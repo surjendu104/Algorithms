@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #define MAX 400
 
-int n;
+int n,minCost=0;
 
 
 int minKey(int key[], bool mstset[])
@@ -26,7 +26,9 @@ int printMst(int parent[], int graph[n][n])
     for (int i = 1; i < n; i++)
     {
         printf("%d - %d\t%d\n", parent[i], i, graph[i][parent[i]]);
+        minCost+=graph[i][parent[i]];
     }
+    printf("\n\nMinicost: %d",minCost);
 }
 
 int primsMst(int graph[n][n])
